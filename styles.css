@@ -264,50 +264,49 @@ main {
   background: none;
   box-shadow: none;
 }
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 
 .map-placeholder {
+  position: relative;
+  width: 100%;
+  min-height: 260px;
   border-radius: 24px;
-  background: radial-gradient(circle at top left, #ffe6d1 0, #ffeede 45%, #ffe0cc 100%);
+  overflow: hidden;
   border: 1px dashed #e1c2a4;
-  min-height: 260px;
-  padding: 16px;
-  position: relative;
-  overflow: hidden;
+  background-color: #fff5ec;
 }
 
 .map-pin {
   position: absolute;
   width: 18px;
   height: 18px;
-  border-radius: 50%;
   background-color: #c67d4a;
-  border: 2px solid #ffffff;
-  box-shadow: 0 0 0 6px rgba(198, 125, 74, 0.15);
-  cursor: pointer;
-}
-
-.map-placeholder {
-  position: relative;
-  min-height: 260px;
-  border-radius: 24px;
-  overflow: hidden;
-  background: url("StudyScape/images/utd-map.png") center/cover no-repeat;
-}
-
-.map-pin {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  background-color: #c87b48;
-  border: 3px solid #ffe9db;
+  border: 3px solid #ffffff;
   border-radius: 50%;
+  box-shadow: 0 0 6px rgba(198, 125, 74, 0.35);
   cursor: pointer;
-  box-shadow: 0 0 0 6px rgba(200, 123, 72, 0.25);
+  transform: translate(-50%, -50%);
   transition: transform 0.2s ease;
 }
 
 .map-pin:hover {
-  transform: scale(1.2);
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.map-label {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: #2f1e16;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
 }
 
 .pin-mcdermott {
