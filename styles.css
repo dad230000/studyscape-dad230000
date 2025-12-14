@@ -54,7 +54,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("images/bg.svg");
+  background-image: url("StudyScape/images/bg.svg");
   background-repeat: repeat;
   background-size: 320px;   /* adjust size here */
   opacity: 0.20;            /* <-- make it visible but soft */
